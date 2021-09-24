@@ -1,0 +1,157 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  background-color: hsl(185, 75%, 39%);
+  min-height: 435px;
+}
+
+.home {
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.patternTop {
+  position: absolute;
+  left: -200px;
+  top: -350px;
+  width: 55%;
+  z-index: -10;
+}
+
+.patternBottom {
+  position: absolute;
+  bottom: -350px;
+  right: -200px;
+  z-index: -10;
+  width: 55%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 15px);
+}
+
+.card {
+  height: 435px;
+  width: 400px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.backgroundImg {
+  width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profileImg {
+  position: relative;
+  left: 150px;
+  top: -50px;
+  border: 5px solid white;
+  border-radius: 100px;
+}
+
+.cardBody {
+  margin: 10px;
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+
+.heading,
+.number {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.age,
+.title,
+.location {
+  color: hsl(227, 10%, 46%);
+}
+
+.age {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.location {
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+}
+
+.cardFooter {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: -50px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 992px) {
+    .patternTop {
+      width: 90%;
+    }
+  
+    .patternBottom {
+      width: 90%;
+    }
+  }
+  
+
+@media only screen and (max-width: 600px) {
+  .patternTop {
+    left: -300px;
+    top: -120px;
+    width: 600px;
+  }
+
+  .patternBottom {
+    bottom: -200px;
+    right: -300px;
+    width: 600px;
+  }
+
+  .center {
+    height: 100vh;
+  }
+
+  .card {
+    width: 320px;
+  }
+
+  .backgroundImg {
+    width: 320px;
+  }
+
+  .profileImg {
+    left: 110px;
+  }
+}
